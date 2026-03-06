@@ -20,16 +20,23 @@ const displayLevelWords = (words) => {  //data property full
     const wordsContainer = document.getElementById("words-container");
     wordsContainer.innerHTML = "";
 
+
+    // id: 90
+    // level:1
+    // meaning:"পানি"
+    // pronunciation:"ওয়াটার"
+    // word:"Water"
+
     words.forEach(word => {
         console.log(word);
         const card = document.createElement("div");
         card.innerHTML = `
             <div class="bg-white mx-auto rounded-xl shadow-sm">
                     <div class="p-14">
-                        <div class="space-y-6 mx-auto px-10 py-14">
-                            <h3 class="text-[32px] font-bold">Eager</h3>
+                        <div class="space-y-6 mx-auto pb-14">
+                            <h3 class="text-[32px] font-bold">${word.word}</h3>
                             <p class="text-[20px]">Meaning /Pronunciation</p>
-                            <h2 class="font-bangla text-[32px] font-semibold text-[#18181B]/80">"আগ্রহী / ইগার"</h2>
+                            <h2 class="font-bangla text-[32px] font-semibold text-[#18181B]/80">"${word.meaning} / ${word.pronunciation}"</h2>
                         </div>
                         <div class="flex justify-between items-center">
                             <button class="btn btn-active bg-[#1A91FF]/10 hover:bg-[#1A91FF]/50 border-none"><i
