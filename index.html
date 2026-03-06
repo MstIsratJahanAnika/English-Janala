@@ -79,7 +79,7 @@
             <!-- left -->
             <div class="content flex-1 text-center md:text-left">
                 <h1 class="text-5xl font-bold mb-[33px]"><span class="text-[#00BCFF]">English </span>is Easy!!</h1>
-                <p class="font-bangla text-[#18181B] text-2xl mb-[27px]">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন।
+                <p class="font-bangla text-[#18181B]/80 text-2xl mb-[27px]">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন।
                     আপনি যদি নতুন হন অথবা
                     আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে
                     যাবে অন্য একটি Level এ</p>
@@ -87,8 +87,10 @@
                 <!-- log in part -->
                 <div class="flex flex-col space-y-5 max-w-[320px] mx-auto md:mx-0 w-fit">
                     <div class="space-y-5">
-                        <input type="text" name="" id="" placeholder="Enter Your Name" class="rounded-sm px-[13px] py-[9.5px] border border-[#18181B]/20">
-                        <input type="password" name="" id="" class="rounded-sm px-[13px] py-[9.5px] border border-[#18181B]/20">
+                        <input type="text" name="" id="" placeholder="Enter Your Name"
+                            class="rounded-sm px-[13px] py-[9.5px] border border-[#18181B]/20">
+                        <input type="password" name="" id=""
+                            class="rounded-sm px-[13px] py-[9.5px] border border-[#18181B]/20">
                     </div>
                     <div>
                         <button class="btn btn-active btn-primary">Get Started</button>
@@ -101,15 +103,21 @@
             </div>
         </section>
         <!-- banner end -->
-    </header> 
+    </header>
 
     <main>
         <section class="w-11/12 mx-auto space-y-10">
-            <h2 class="text-[36px] font-bold text-center"><span class="text-[#00BCFF]">Let's </span>Learn Vocabularies</h2>
+            <h2 class="text-[36px] font-bold text-center"><span class="text-[#00BCFF]">Let's </span>Learn Vocabularies
+            </h2>
 
             <!-- parent container -->
-            <div id ="lessons-container" class="flex flex-wrap justify-center gap-5 mb-10">
-            </div>   
+            <div id="lessons-container" class="flex flex-wrap justify-center gap-5 mb-10">
+            </div>
+
+            <div id="words-container" class="bg-[#F8F8F8] rounded-3xl text-center grid grid-cols-3 gap-7.5 p-[30px]">
+                <!-- card div -->
+                              
+            </div>
         </section>
     </main>
 
@@ -118,7 +126,7 @@
     </footer>
 
     <!-- scripts -->
-     <script src="./scripts/index.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
